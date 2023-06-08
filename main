@@ -1,0 +1,179 @@
+import pygame
+import pygame.image
+import sys
+import textwrap
+
+pygame.init()
+WIDTH = 800
+HEIGHT = 630
+window = pygame.display.set_mode((WIDTH,HEIGHT))
+WINDOW_COLOR = (71, 70, 82)#
+option_background_color = (71,70,82)#
+LINE_COLOR = (255,255,255)#
+OPTION_COLOR=(30,33,30)
+DOT = (50,38,212)
+highlight_color = (178,176,209)
+inventory_items_color = (0, 0, 0)##
+inventory = [ '1.key','2.food', '3.watch', '4.purse']  # inventory
+
+
+image1 = pygame.image.load("C:/Users/advaith\Pictures\Saved Pictures\DARK BEDROOM, s 0.png")
+
+
+class Player:
+    def __init__(self):
+        pass
+    def draw(self):
+        pass
+class Scene:
+    global inventory
+    def __init__(self,description,options,next_scenes):
+        self.description=description
+        self.options=options
+        self.next_scenes=next_scenes
+
+    def draw(self,hovered_option):
+        description_font=pygame.font.Font(None,28)
+        option_font=pygame.font.Font(None,24)
+
+        window.fill(WINDOW_COLOR)
+        window.blit(image1,(0,-300))
+
+        bottom_rect = pygame.Rect(0,HEIGHT//1.5,WIDTH,HEIGHT//2)
+        pygame.draw.rect(window,option_background_color,bottom_rect)
+
+        description_lines = textwrap.wrap(self.description,60)
+        y = 50
+        for line in description_lines:
+            description_text = description_font.render(line,True,LINE_COLOR)
+            description_rect = description_text.get_rect(left=50,top=y)
+            window.blit(description_text,description_rect)
+            y += 30
+
+        option_y = HEIGHT -150
+        for i, option in enumerate(self.options):#enumerate done
+            option_text = option_font.render(option,True,OPTION_COLOR)
+            option_rect = option_text.get_rect(left=50,top=option_y)
+            window.blit(option_text,option_rect)
+            option_y += 30
+
+            pygame.draw.rect(window,WINDOW_COLOR,option_rect)
+
+            if i == hovered_option:
+                pygame.draw.rect(window,highlight_color,option_rect,100)
+
+            window.blit(option_text, option_rect.inflate(0, 0))
+
+            option_y += 0
+
+            if self.next_scenes[i] != 1000:
+                pygame.draw.circle(window,DOT,(30,option_rect.centery),5)
+
+            box_color = (153, 102, 47)#rectangle for inventory box
+            box_rect = pygame.Rect(450, 430, 300, 180)
+            pygame.draw.rect(window, box_color, box_rect)
+
+            text = 'INVENTORY BOX'#for inventory box
+            font = pygame.font.Font(None, 36)
+            text_render = font.render(text, True, (77, 74, 70))
+
+            text_x = 480
+            text_y = 440
+            window.blit(text_render, (text_x, text_y))
+
+
+            z = 480#fist y position of first item in inventory
+            for item in inventory:
+                font = pygame.font.Font(None, 24)
+                text_render = font.render(item, True, inventory_items_color)
+                window.blit(text_render, (480, z))
+                z += 20
+
+player = Player()
+
+initial_scene=Scene("You wake up in a dark room with a little light entering through a broken window. "
+                    "It looks like you are in an old shack with each step hearing a loud creek of the old wooden floor. "
+                    "You look around and see a table, some cupboards, and a few pictures hanging on the wall.",
+                    ["Go to the door", "Peek through the window", "Look at the images",
+                    "Open the cupboards", "Inspect the table"],
+                    [0, 1, 2, 3, 4],)
+
+
+sub_scenes = [
+    Scene("The door is locked. Look for a key in the room to open the door.",
+          ["Search under the table", "Check the cupboards", "Inspect the images",
+           "Look inside the drawer", "Examine the room"],
+           [None, None, None, None, 100] ),
+    Scene("The gap in the window is so small. You can see the sky and a few trees. "
+          "It looks like the countryside.",
+          ["Continue observing the outside", "Search for a way to enlarge the gap",
+           "Examine the surroundings",
+           "Look for tools to break the window", "Go back"],
+          [None, None, None, None, 100]),
+    Scene("You see images of a young and an old person. "
+          "They look like they are father and son.",
+          ["Examine the details in the images", "Search for hidden compartments",
+           "Look for any clues in the room", "Interact with the images",
+           "Continue observing the room"],
+          [None, None, None, None, 100]),
+    Scene("You find a few food items, and there's a key hidden behind.",
+          ["Take the key", "Inspect the food items", "Continue searching the cupboards",
+           "Look for more hidden items", "Go back"],
+          [None, None, None, None, 100]),
+    Scene("There's a lamp on the table, along with a few books, stationary, "
+          "and a broken water bottle.",
+          ["Turn on the lamp", "Read the books",
+           "Investigate the broken water bottle", "Search for hidden compartments", "Go back"],
+          [None, None, None, None, 100])
+]
+
+sub_scene2=[
+    Scene('the door is opened,you are now in a corridor..',
+          ['Go along the corridor','get back to the room','just dance on corridor',
+           'sleep on the corridor','run on the corridor'],
+          [None,100,None,None,None])
+]
+
+current_scene = initial_scene
+
+while True:
+    hovered_option = None
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
+        elif event.type == pygame.MOUSEBUTTONDOWN:
+            if event.button == 1 :
+                mouse_pos = pygame.mouse.get_pos()
+                option_clicked =(mouse_pos[1]-(HEIGHT-150))//30
+                if 0 <= option_clicked < len(current_scene.options):
+                    selected_option = current_scene.options[option_clicked]
+                    next_scene_index =current_scene.next_scenes[option_clicked]
+                    if next_scene_index == None:
+                        print('Invalid options')
+                    else:
+                        if next_scene_index == 100:
+                            next_scene = initial_scene
+
+                        elif '1.key' in inventory:
+                            if current_scene == initial_scene:
+                                        next_scene = sub_scene2[0]
+                                        current_scene = next_scene
+                            else:
+                                if next_scene_index == current_scene.next_scenes[0]:
+                                    next_scene = sub_scenes[next_scene_index]
+                                    current_scene = next_scene
+
+                        else:
+                            next_scene = sub_scenes[next_scene_index]
+
+                        current_scene = next_scene
+        elif event.type == pygame.MOUSEMOTION:
+            mouse_pos = pygame.mouse.get_pos()
+            option_hovered =(mouse_pos[1] - (HEIGHT - 150))//30
+            if 0 <= option_hovered < len(current_scene.options):
+                hovered_option = option_hovered
+    current_scene.draw(hovered_option)
+    player.draw()
+    pygame.display.update()
