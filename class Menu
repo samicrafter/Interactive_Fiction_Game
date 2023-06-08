@@ -1,0 +1,77 @@
+import pygame
+import story
+import sys
+import textwrap
+from pygame import mixer
+
+# Set up the game window
+WIDTH = 800
+HEIGHT = 620
+window = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Interactive Fiction Game")
+
+# Initialize Pygame
+pygame.init()
+# Initialize Pygame mixer
+pygame.mixer.init()
+# clock = pygame.time.Clock()
+
+# Define colors
+CREME = (255, 253, 208)
+WINDOW_COLOR = (150, 163, 151)
+LINE_COLOR = (30, 33, 30)
+DOT = (50, 38, 212)
+INVENTORY_ITEMS_COLOR = (0, 0, 0)
+PROLOGUE_COLOR = (0, 0, 0)
+
+
+# Create a class for the menu
+class Menu:
+    def __init__(self):
+        self.options = ["Start Game", "Quit"]
+        self.selected_option = 0
+        self.image = pygame.image.load("C:/Users/advaith\Pictures\Saved Pictures\Pics/1237768.jpg")
+
+        pygame.mixer.music.load("C:/Users/advaith\Downloads\Private Investigator.mp3")
+        pygame.mixer.music.play(-1)
+
+    def draw(self):
+        # Set up fonts
+        title_font = pygame.font.Font(None, 60)
+        option_font = pygame.font.Font(None, 36)
+
+        # Set up background color
+        window.fill(WINDOW_COLOR)
+        window.blit(self.image, (0, 0))
+
+        # Draw the title
+        title_text = title_font.render("Murder on the Train", True, WINDOW_COLOR)
+        title_rect = title_text.get_rect(center=(WIDTH / 2, HEIGHT / 2 - 200))
+        window.blit(title_text, title_rect)
+
+        # Draw the options
+        for i, option in enumerate(self.options):
+            option_text = option_font.render(option, True, WINDOW_COLOR)
+            option_rect = option_text.get_rect(center=(WIDTH / 2, HEIGHT / 1.43 + i * 50))
+
+            # Draw a highlight around the selected option
+            if i == self.selected_option:
+                pygame.draw.rect(window, CREME, option_rect, 100)
+
+            window.blit(option_text, option_rect)
+
+    def update_selection(self, direction):
+        self.selected_option += direction
+        if self.selected_option < 0:
+            self.selected_option = len(self.options) - 1
+        elif self.selected_option >= len(self.options):
+            self.selected_option = 0
+           
+class Player:
+    def __init__(self):
+        pass
+
+    def draw(self):
+        pass
+
+
