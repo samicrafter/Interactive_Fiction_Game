@@ -334,7 +334,7 @@ sleeper_2 = Scene("The walls of Sleeper 2 are adorned with plush velvet drapes i
                   "inviting weary travelers to rest and rejuvenate. Soft pillows and plush blankets provide a cocoon "
                   "of comfort",
                   ["Inspect the roof", 'Look at the handbag', 'Talk to the lady',
-                   'Notices a note on floor', "Go back"],
+                   'a note on floor', "Go back"],
                   ["Roof", 99, "Vivian", 99, "Go back"],
                   {
                       "Roof": roof_scene3,
