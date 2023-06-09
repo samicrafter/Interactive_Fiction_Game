@@ -272,7 +272,7 @@ Ryan_end = GameEnd(
     [None, None],
     pygame.mixer.Sound("music\Mission Failed Sound Effect (mp3cut.net).mp3")
 )
-scene_accuse = Accuse(["is it Ryan", "is it  Vivian", "is it Peter", "is it Mr.wolf", "is it luke",
+scene_accuse = Accuse(["Ryan", "Vivian", "Peter", "Mr.wolf", "Luke",
                        "is it Sam", "Return"],
                       ["Ryan", "Vivian", "Peter", "Wolf", "Luke", "Sam", "Go back"],
                       {
