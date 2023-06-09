@@ -322,8 +322,8 @@ roof_scene3 = Scene("The gustling air blows onto your face as you climb up the r
                         "Go back": None
                     },
                     pygame.image.load(
-                        "Game_Pics/582d97769e68354dd6d4ddd2371a662c.jpg"),
-                    (0, 0),
+                        "Game_Pics\olivier-carignan-victoriastation-extfront.jpg"),
+                    (-300, 20),
                     [None])
 # sleeper_2
 sleeper_2 = Scene("The walls of Sleeper 2 are adorned with plush velvet drapes in deep hues, creating an atmosphere "
@@ -425,7 +425,7 @@ roof_scene2 = Scene("There's nothing here on the roof",
                     },
                     pygame.image.load(
                         "Game_Pics\olivier-carignan-victoriastation-extfront.jpg"),
-                    (0, 0),
+                    (-300, 20),
                     [None])
 # sleeper_1
 sleeper_1 = Scene("The detective continues his investigation, There's wealthy Industrailist ",
@@ -512,8 +512,8 @@ roof_scene = Scene("The detective then climbs on the roof of the moving train an
                        "Go back": None
                    },
                    pygame.image.load(
-                       "Game_Pics/582d97769e68354dd6d4ddd2371a662c.jpg"),
-                   (0, 0),
+                       "Game_Pics\olivier-carignan-victoriastation-extfront.jpg"),
+                   (-300, 20),
                    [None])
 
 passenger_carriage = Scene('The detective comes to the passenger carriage',
@@ -568,7 +568,7 @@ restaurant_carriage = Scene('You enter the restaurant carriage, The carriage is 
                             'white linens, polished silverware, and delicate porcelain china, ready to accommodate '
                             'discerning diners. Plush, upholstered seats line the carriage, providing both comfort '
                             'and a touch of luxury. You see a bartender an ',
-                            ["Read the newspaper on table", "Read a pamphlet at other table",
+                            ["Read the newspaper lying on dining table", "Read a pamphlet at another table",
                              "Talk to Peter", "Talk to Ryan", "Look at item", "Go back"],
                             [99, 99, "Peter", "Ryan", 99, "Go back"],
                             {
