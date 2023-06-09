@@ -568,7 +568,7 @@ restaurant_carriage = Scene('You enter the restaurant carriage, The carriage is 
                             'white linens, polished silverware, and delicate porcelain china, ready to accommodate '
                             'discerning diners. Plush, upholstered seats line the carriage, providing both comfort '
                             'and a touch of luxury. You see a bartender an ',
-                            ["Read the newspaper lying on dining table", "Read a pamphlet at another table",
+                            ["Read the newspaper on table", "Read a pamphlet at other table",
                              "Talk to Peter", "Talk to Ryan", "Look at item", "Go back"],
                             [99, 99, "Peter", "Ryan", 99, "Go back"],
                             {
