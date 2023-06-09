@@ -208,28 +208,28 @@ Sam_end = GameEnd(
     "Sam is not the culprit",
     ["Restart", "Quit"],
     pygame.image.load(
-        "C:/Users/advaith\Pictures\Saved Pictures\Pics/1237768.jpg"),
+        "Game_Pics/1237768.jpg"),
     (0, 0),
     [None, None],
-    pygame.mixer.Sound("C:/Users/advaith\Downloads\Mission Failed Sound Effect (mp3cut.net).mp3"))
+    pygame.mixer.Sound("music\Mission Failed Sound Effect (mp3cut.net).mp3"))
 
 Luke_end = GameEnd(
     "Luke is not the culprit",
     ["Restart", "Quit"],
     pygame.image.load(
-        "C:/Users/advaith\Pictures\Saved Pictures\Pics/1237768.jpg"),
+        "Game_Pics/1237768.jpg"),
     (0, 0),
     [None, None],
-    pygame.mixer.Sound("C:/Users/advaith\Downloads\Mission Failed Sound Effect (mp3cut.net).mp3"))
+    pygame.mixer.Sound("music\Mission Failed Sound Effect (mp3cut.net).mp3"))
 
 Wolf_end = GameEnd(
     "Wolf is not the culprit",
     ["Restart", "Quit"],
     pygame.image.load(
-        "C:/Users/advaith\Pictures\Saved Pictures\Pics/1237768.jpg"),
+        "Game_Pics/1237768.jpg"),
     (0, 0),
     [None, None],
-    pygame.mixer.Sound("C:/Users/advaith\Downloads\Mission Failed Sound Effect (mp3cut.net).mp3")
+    pygame.mixer.Sound("music\Mission Failed Sound Effect (mp3cut.net).mp3")
 )
 
 Peter_end = GameEnd(
@@ -248,29 +248,29 @@ Peter_end = GameEnd(
     "not meet justice himself! – Henry Raymond ",
     ["Restart", "Quit"],
     pygame.image.load(
-        "C:/Users/advaith\Pictures\Saved Pictures\Pics/1237768.jpg"),
+        "Game_Pics/1237768.jpg"),
     (0, 0),
     [None, None],
-    pygame.mixer.Sound("C:/Users/advaith\Downloads\Assassin's Creed Flag Sound Effect 1 of 2.mp3"))
+    pygame.mixer.Sound("music\Assassin's Creed Flag Sound Effect 1 of 2.mp3"))
 
 Vivian_end = GameEnd(
     "Vivian is not the culprit",
     ["Restart", "Quit"],
     pygame.image.load(
-        "C:/Users/advaith\Pictures\Saved Pictures\Pics/1237768.jpg"),
+        "Game_Pics/1237768.jpg"),
     (0, 0),
     [None, None],
-    pygame.mixer.Sound("C:/Users/advaith\Downloads\Mission Failed Sound Effect (mp3cut.net).mp3")
+    pygame.mixer.Sound("music\Mission Failed Sound Effect (mp3cut.net).mp3")
 )
 
 Ryan_end = GameEnd(
     "Ryan is not the culprit",
     ["Restart", "Quit"],
     pygame.image.load(
-        "C:/Users/advaith\Pictures\Saved Pictures\Pics/1237768.jpg"),
+        "Game_Pics/1237768.jpg"),
     (0, 0),
     [None, None],
-    pygame.mixer.Sound("C:/Users/advaith\Downloads\Mission Failed Sound Effect (mp3cut.net).mp3")
+    pygame.mixer.Sound("music\Mission Failed Sound Effect (mp3cut.net).mp3")
 )
 scene_accuse = Accuse(["is it Ryan", "is it  Vivian", "is it Peter", "is it Mr.wolf", "is it luke",
                        "is it Sam", "Return"],
@@ -285,7 +285,7 @@ scene_accuse = Accuse(["is it Ryan", "is it  Vivian", "is it Peter", "is it Mr.w
                           "Go back": None
                       },
                       pygame.image.load(
-                          "C:/Users/advaith\Pictures\Saved Pictures\Pics/1237768.jpg"),
+                          "Game_Pics/1237768.jpg"),
                       (0, 0),
                       [None, None, None, None, None, None, None])
 
@@ -304,7 +304,7 @@ Vivian = Scene("As you enter the room, you are met with a striking figure, exudi
                    "Go back": None
                },
                pygame.image.load(
-                   "C:/Users/advaith\Pictures\Saved Pictures\Pics\train_scene.jpg"),
+                   "Game_Pics/train_scene.jpg"),
                (0, 0),
                ["Vivian :Nothing unusual at all! I had a drink with some gents and then retired to my sleeper",
                 "Vivian :The rich fella? I did talk with him. Very charming, but a single woman has to be careful, "
@@ -322,7 +322,7 @@ roof_scene3 = Scene("The gustling air blows onto your face as you climb up the r
                         "Go back": None
                     },
                     pygame.image.load(
-                        "C:/Users/advaith\Pictures\Saved Pictures\Pics/582d97769e68354dd6d4ddd2371a662c.jpg"),
+                        "Game_Pics/582d97769e68354dd6d4ddd2371a662c.jpg"),
                     (0, 0),
                     [None])
 # sleeper_2
@@ -342,7 +342,7 @@ sleeper_2 = Scene("The walls of Sleeper 2 are adorned with plush velvet drapes i
                       "Go back": None
                   },
                   pygame.image.load(
-                      "C:/Users/advaith\Pictures\Saved Pictures\Pics\train_scene.jpg"),
+                      "Game_Pics/train_scene.jpg"),
                   (0, 0),
                   [None,
                    'Contains a letter: '"How goes it. Viv? Hook any more fish? It's a lovely caper you've got going- "
@@ -375,7 +375,7 @@ Sam = Scene("The detective now goes to interrogate sam, valet of Mr Wolf",
                 "Go back": None
             },
             pygame.image.load(
-                "C:/Users/advaith\Pictures\Saved Pictures\Pics/0e424d4e4efcd61c0bdaca53f729eb0f.jpg"),
+                "Game_Pics/0e424d4e4efcd61c0bdaca53f729eb0f.jpg"),
             (0, 0),
             ["Sam :Mr. Wolf had a few with Mr. Killian. Then the young lady invited herself over to "
              "have a glass with 'em.",
@@ -396,7 +396,7 @@ Wolf = Scene(
         "Go back": None
     },
     pygame.image.load(
-        "C:/Users/advaith\Pictures\Saved Pictures\Pics/582d97769e68354dd6d4ddd2371a662c.jpg"),
+        "Game_Pics/582d97769e68354dd6d4ddd2371a662c.jpg"),
     (0, 0),
     ["Mr Wolf :I had drinks in the dining car with killian.We had business dealings in the past."
      "It was a pleasant surprise to discover him on this train .I suppose there were some disagreements,"
@@ -424,7 +424,7 @@ roof_scene2 = Scene("There's nothing here on the roof",
                         "Go back": None
                     },
                     pygame.image.load(
-                        "C:/Users/advaith\Pictures\Saved Pictures\Pics\olivier-carignan-victoriastation-extfront.jpg"),
+                        "Game_Pics\olivier-carignan-victoriastation-extfront.jpg"),
                     (0, 0),
                     [None])
 # sleeper_1
@@ -439,7 +439,7 @@ sleeper_1 = Scene("The detective continues his investigation, There's wealthy In
                       "Go back": None
                   },
                   pygame.image.load(
-                      "C:/Users/advaith\Pictures\Saved Pictures\Pics/0e424d4e4efcd61c0bdaca53f729eb0f.jpg"),
+                      "Game_Pics/0e424d4e4efcd61c0bdaca53f729eb0f.jpg"),
                   (0, 0),
                   ['A small, ivory-plated derringer. Chamber for two bullets, but one is missing.',
                    '"Killian will be on the 616 train to Cardiff to sign the papers. You must prevent him from '
@@ -472,7 +472,7 @@ Luke = Scene(
         "Go back": None
     },
     pygame.image.load(
-        "C:/Users/advaith\Pictures\Saved Pictures\Pics/582d97769e68354dd6d4ddd2371a662c.jpg"),
+        "Game_Pics/582d97769e68354dd6d4ddd2371a662c.jpg"),
     (0, 0),
     ["Luke : Odd thing was, some noises on the roof woke me up briefly. You say someone was "
      "thrown from up there? You'd have to be a  very strong fellow to drag someone up onto the roof! ",
@@ -512,7 +512,7 @@ roof_scene = Scene("The detective then climbs on the roof of the moving train an
                        "Go back": None
                    },
                    pygame.image.load(
-                       "C:/Users/advaith\Pictures\Saved Pictures\Pics/582d97769e68354dd6d4ddd2371a662c.jpg"),
+                       "Game_Pics/582d97769e68354dd6d4ddd2371a662c.jpg"),
                    (0, 0),
                    [None])
 
@@ -525,7 +525,7 @@ passenger_carriage = Scene('The detective comes to the passenger carriage',
                                "Go back": None
                            },
                            pygame.image.load(
-                               "C:/Users/advaith\Pictures\Saved Pictures\Pics/582d97769e68354dd6d4ddd2371a662c.jpg"),
+                               "Game_Pics/582d97769e68354dd6d4ddd2371a662c.jpg"),
                            (0, 0),
                            [None, None, None])
 Luke.next_scene_map["Go back"] = passenger_carriage
@@ -539,7 +539,7 @@ Peter = Scene("He looks like peter, he's the restaurant carriage steward in the 
                   "Go back": None
               },
               pygame.image.load(
-                  "C:/Users/advaith\Pictures\Saved Pictures\Pics/5e81d58221c02.jpg"),
+                  "Game_Pics/5e81d58221c02.jpg"),
               (0, 0),
               ["It was a typical evening. As far as I knew, nothing unusual happened until you came aboard with "
                "this story of a murder.",
@@ -554,7 +554,7 @@ Ryan = Scene("The detective goes to meet the next suspect ,ryan,the bartender",
                  "Go back": None
              },
              pygame.image.load(
-                 "C:/Users/advaith\Pictures\Saved Pictures\Pics/5e81d58221c02.jpg"),
+                 "Game_Pics/5e81d58221c02.jpg"),
              (0, 0),
              ["Nothing unusual. Couple of passengers came in and had a sort of business meeting."
               " One of 'em was buying a lot of drinks for the other, and then they started to argue."
@@ -577,7 +577,7 @@ restaurant_carriage = Scene('You enter the restaurant carriage, The carriage is 
                                 "Go back": None
                             },
                             pygame.image.load(
-                                "C:/Users/advaith\Pictures\Saved Pictures\Pics/5e81d58221c02.jpg"),
+                                "Game_Pics/5e81d58221c02.jpg"),
                             (0, 0),
                             ["An article about Matthew Killian's efforts to close an enormous business deal in Wales."
                              "It notes that Killian is well known for replacing workers with machinery."
@@ -651,7 +651,7 @@ mid_train = Scene("You come back to the mid part of the train looking for more c
                       "Accuse": scene_accuse
                   },
                   pygame.image.load(
-                      "C:/Users/advaith\Pictures\Saved Pictures\Pics/train_scene.jpg"),
+                      "Game_Pics/train_scene.jpg"),
                   (0, 0),
                   [None, None, None, None])
 
@@ -676,7 +676,7 @@ train_scene = Scene("As you board the waiting train, a gust of warm air welcomed
                         "Sleeper_2": sleeper_2,
                     },
                     pygame.image.load(
-                        "C:/Users/advaith\Pictures\Saved Pictures\Pics/train_scene.jpg"),
+                        "Game_Pics/train_scene.jpg"),
                     (0, 0),
                     [None, None, None, None])
 
@@ -687,7 +687,7 @@ train_stop = Scene("You immediately pull the emergency lever and stop the train 
                        "wrong_scene1": None,
                        "next_scene": train_scene
                    },
-                   pygame.image.load(r"C:\Users\advaith\Pictures\Saved Pictures\Pics\train_scene.jpg"),
+                   pygame.image.load(r"Game_Pics\train_scene.jpg"),
                    (0, 30),
                    [None,
                     "Trainmaster: The midnight train, It's Train 616. You better hurry. It's leaving right now",
@@ -701,10 +701,10 @@ end_game1 = GameEnd("After a few hours of travel, the train eventually arrived a
                     "yet another mystery remains unsolved. ",
                     ["Restart", "  Quit  "],
                     pygame.image.load(
-                        "C:/Users/advaith\Pictures\Saved Pictures\Pics/1237768.jpg"),
+                        "Game_Pics/1237768.jpg"),
                     (0, 0),
                     [None, None],
-                    pygame.mixer.Sound("C:/Users/advaith\Downloads\Mission Failed Sound Effect (mp3cut.net).mp3")
+                    pygame.mixer.Sound("music\Mission Failed Sound Effect (mp3cut.net).mp3")
                     )
 
 wrong_scene1 = Scene("You enter the train. But wait, the train's powerful locomotives pulled a long line of wagons, "
@@ -716,7 +716,7 @@ wrong_scene1 = Scene("You enter the train. But wait, the train's powerful locomo
                      {
                          "end_game1": end_game1
                      },
-                     pygame.image.load(r"C:\Users\advaith\Pictures\Saved Pictures\Pics\bruno-morin-blacktrain.jpg"),
+                     pygame.image.load(r"Game_Pics\bruno-morin-blacktrain.jpg"),
                      (0, 0),
                      ["Amidst the coal train, alongside the towering mounds of coal, the wagons bore witness to a "
                       "myriad of other products and materials. Maybe this is a cargo and good train.",
@@ -738,7 +738,7 @@ wrong_scene2 = Scene("Stepping onto the passenger train, you find yourself engul
                          "next station": end_game1,
                          "Stop train": train_stop
                      },
-                     pygame.image.load(r"C:\Users\advaith\Pictures\Saved Pictures\Pics\bruno-morin-blacktrain.jpg"),
+                     pygame.image.load(r"Game_Pics\bruno-morin-blacktrain.jpg"),
                      (0, 0),
                      ["The train inspector informs you that this is train 616 and nothing such as murders happen on "
                       "this train. Since it is a passenger train, it is always crowded with people.", None, None])
@@ -759,7 +759,7 @@ initial_scene3 = Scene("With the pocket watch securely in his possession, You kn
                            "wrong_scene2": wrong_scene2,
                            "next_scene": train_scene
                        },
-                       pygame.image.load(r"C:\Users\advaith\Pictures\Saved Pictures\Pics\Train_station.png"),
+                       pygame.image.load(r"Game_Pics\Train_station.png"),
                        (0, 0),
                        [None, None,
                         "Trainmaster: The midnight train, It's Train 616. You better hurry. It's leaving right now",
@@ -777,7 +777,7 @@ initial_scene = Scene("At the scene, you find a man standing at a tree nearby th
                           "next_scene": None,
                       },
                       pygame.image.load(
-                          r"C:\Users\advaith\Pictures\Saved Pictures\Pics\murder.jpg"),
+                          r"Game_Pics\murder.jpg"),
                       (-430, 0),
                       ["A lifeless Male body dressed in the attire of a "
                        "wealthy businessman, lay motionless. He is wearing only one shoe. The man has sustained "
@@ -806,7 +806,7 @@ initial_scene2 = Scene("You approached the tramp cautiously, your instinct guidi
                            "Go back": initial_scene
                        },
                        pygame.image.load(
-                           r"C:\Users\advaith\Pictures\Saved Pictures\Pics\assassins_creed_syndicate_london_art-2.png"),
+                           r"Game_Pics\assassins_creed_syndicate_london_art-2.png"),
                        (0, 0),
                        ["Vagrant: I heard a splash an' right quick pulled this bloke out a' the shallows. Dead as a "
                         "mackerel.",
