@@ -123,14 +123,14 @@ class Accuse:
         text = 'Whom will you Accuse?'  # for inventory box
         font = pygame.font.Font(None, 30)
         text_render = font.render(text, True, (250, 250, 250))  # (33,38,46)
-        text_x = 222
+        text_x = 250
         text_y = 105
         window.blit(text_render, (text_x, text_y))
 
         option_y = HEIGHT - 370
         for i, option in enumerate(self.options):  # enumerate done
             option_text = option_font.render(option, True, OPTION_COLOR)
-            option_rect = option_text.get_rect(left=180, top=option_y)
+            option_rect = option_text.get_rect(left=280, top=option_y)
 
             # Draw a highlight around the selected option
             if i == self.selected_option:
