@@ -687,7 +687,7 @@ train_stop = Scene("You immediately pull the emergency lever and stop the train 
                        "wrong_scene1": None,
                        "next_scene": train_scene
                    },
-                   pygame.image.load(r"Game_Pics\train_scene.jpg"),
+                   pygame.image.load(r"Game_Pics\Train_station.png"),
                    (0, 30),
                    [None,
                     "Trainmaster: The midnight train, It's Train 616. You better hurry. It's leaving right now",
