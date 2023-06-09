@@ -21,7 +21,7 @@ DOT = (50, 38, 212)
 INVENTORY_ITEMS_COLOR = (0, 0, 0)
 PROLOGUE_COLOR = (0, 0, 0)
 
-sound1 = pygame.mixer.Sound("C:/Users/advaith\Downloads\Minecraft Menu Button Sound Effect Sounffex (mp3cut.net)(1).mp3")
+sound1 = pygame.mixer.Sound("music\Minecraft Menu Button Sound Effect Sounffex (mp3cut.net)(1).mp3")
 
 
 # Create a class for the menu
@@ -29,9 +29,9 @@ class Menu:
     def __init__(self):
         self.options = ["Start Game", "Quit"]
         self.selected_option = 0
-        self.image = pygame.image.load("C:/Users/advaith\Pictures\Saved Pictures\Pics/1237768.jpg")
+        self.image = pygame.image.load("Game_Pics/1237768.jpg")
 
-        pygame.mixer.music.load("C:/Users/advaith\Downloads\Private Investigator.mp3")
+        pygame.mixer.music.load("music\Private Investigator.mp3")
         pygame.mixer.music.play(-1)
 
     def draw(self):
@@ -128,7 +128,7 @@ prologue1 = Prologue("London, 1868, A city cloaked in a fog of coal smoke and se
                      " chap working at the road. The chap screams:                                       "
                      "                                Hey! Someone help! Some tramp found something down there!",
                      pygame.image.load(
-                         r"C:\Users\advaith\Pictures\Saved Pictures\Pics\600965.jpg"),
+                         r"C:Game_Pics\600965.jpg"),
                      "press 'Enter' to continue.")
 prologue2 = Prologue("Looks like foul play! You rush to the scene. In the dimly lit streets of the city, "
                     "shadows danced along the crumbling "
@@ -140,7 +140,7 @@ prologue2 = Prologue("Looks like foul play! You rush to the scene. In the dimly 
                     "starkly with the squalor of the surroundings. The mist draped him like a mourning shroud, "
                     "while the flickering light of a gas lamp cast an eerie glow upon his still form.",
                     pygame.image.load(
-                        r"C:\Users\advaith\Pictures\Saved Pictures\Pics\assassins_creed_syndicate_london_art-7.png"),
+                        r"Game_Pics\assassins_creed_syndicate_london_art-7.png"),
                     "press 'Enter' to start story.")
 
 # Flag to control whether the menu is active
@@ -178,11 +178,11 @@ while True:
                             pygame.mixer.music.stop()
                             # Load the music files
                             music_files = [
-                                "C:/Users/advaith\Downloads\AC Syndicate OST Austin Wintory - London Is Waiting.mp3",
-                                "C:/Users/advaith\Downloads\AC Syndicate OST Austin Wintory - Danza alla Daggers.mp3",
-                                "C:/Users/advaith/Downloads/FASTEST-2021-09-06_-_Solving_The_Crime_-_David_Fesliyan.mp3",
-                                "C:/Users/advaith/Downloads/2018-07-22_-_The_Unsolved_Murder_-_David_Fesliyan.mp3",
-                                "C:/Users/advaith/Downloads/Fastest-Version-2021-10-23_-_Sneaky_Action_-_David_Fesliyan.mp3"
+                                "music\AC Syndicate OST Austin Wintory - London Is Waiting.mp3",
+                                "music\AC Syndicate OST Austin Wintory - Danza alla Daggers.mp3",
+                                "music/FASTEST-2021-09-06_-_Solving_The_Crime_-_David_Fesliyan.mp3",
+                                "music/2018-07-22_-_The_Unsolved_Murder_-_David_Fesliyan.mp3",
+                                "music/Fastest-Version-2021-10-23_-_Sneaky_Action_-_David_Fesliyan.mp3"
                             ]
                             # Load the first music file
                             pygame.mixer.music.load(music_files[0])
@@ -208,14 +208,14 @@ while True:
                     elif event.key == pygame.K_ESCAPE:
                         menu_active = True
                         pygame.mixer.music.stop()
-                        pygame.mixer.music.load("C:/Users/advaith\Downloads\Private Investigator.mp3")
+                        pygame.mixer.music.load("music\Private Investigator.mp3")
                         pygame.mixer.music.play()
 
             else:
                 if event.key == pygame.K_ESCAPE:
                     menu_active = True
                     pygame.mixer.music.stop()
-                    pygame.mixer.music.load("C:/Users/advaith\Downloads\Private Investigator.mp3")
+                    pygame.mixer.music.load("music\Private Investigator.mp3")
                     pygame.mixer.music.play()
 
                 if event.key == pygame.K_UP:
