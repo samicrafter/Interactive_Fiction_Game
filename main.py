@@ -125,7 +125,7 @@ prologue1 = Prologue("London, 1868, A city cloaked in a fog of coal smoke and se
                      " blending with the distant sound of traffic and muffled conversations. The thick mist embraced"
                      " the city, veiling its mysteries, but your trained eye could discern the subtle signs"
                      "of trouble. And trouble, it seemed, awaited you just ahead. As you were thinking, you encounter a"
-                     " chap working at the road. The chap screams:                                       "
+                     " chap working at the road.     The chap screams:                                       "
                      "                                Hey! Someone help! Some tramp found something down there!",
                      pygame.image.load(
                          r"Game_Pics/600965.jpg"),
