@@ -96,7 +96,7 @@ class Prologue:
         text_y = 50
         window.blit(text_render, (text_x, text_y))
 
-        prologue_lines = textwrap.wrap(self.text, 78)
+        prologue_lines = textwrap.wrap(self.text, 86)
         y = 80
         for line in prologue_lines:
             prologue_text = prologue_font.render(line, True, (0, 0, 0))
@@ -135,7 +135,8 @@ prologue2 = Prologue("Looks like foul play! You rush to the scene. In the dimly 
                     "facades of buildings. The air was thick with a palpable tension, as if the very atmosphere held "
                     "secrets that were itching to be unraveled. It was a city that had seen its fair share of crimes, "
                     "a breeding ground for both the desperate and the cunning. You instantly walk down the road "
-                    "under to the arches of an ancient bridge.      There, lying on the ground, was a lifeless body - a "
+                    "under to the arches of an ancient bridge.                                                       "
+                     "There, lying on the ground, was a lifeless body - a "
                     "gentleman whose face bore the pallor of death and whose finely tailored clothing contrasted "
                     "starkly with the squalor of the surroundings. The mist draped him like a mourning shroud, "
                     "while the flickering light of a gas lamp cast an eerie glow upon his still form.",
