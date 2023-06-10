@@ -206,7 +206,7 @@ class GameEnd:
 
 Sam_end = GameEnd(
     "Sam is not the culprit",
-    ["Restart", "Quit"],
+    ["Restart", "  Quit  "],
     pygame.image.load(
         "Game_Pics/1237768.jpg"),
     (0, 0),
@@ -215,7 +215,7 @@ Sam_end = GameEnd(
 
 Luke_end = GameEnd(
     "Luke is not the culprit",
-    ["Restart", "Quit"],
+    ["Restart", "  Quit  "],
     pygame.image.load(
         "Game_Pics/1237768.jpg"),
     (0, 0),
@@ -224,7 +224,7 @@ Luke_end = GameEnd(
 
 Wolf_end = GameEnd(
     "Wolf is not the culprit",
-    ["Restart", "Quit"],
+    ["Restart", "  Quit  "],
     pygame.image.load(
         "Game_Pics/1237768.jpg"),
     (0, 0),
@@ -246,7 +246,7 @@ Peter_end = GameEnd(
     "from participating in a business meeting on the following day, but Wolf himself fell afoul of the drugged brandy "
     "and slept through the entire episode! As for Peter the murderer... perhaps he meted out justice, in turn he will "
     "not meet justice himself! – Henry Raymond ",
-    ["Restart", "Quit"],
+    ["Restart", "  Quit  "],
     pygame.image.load(
         "Game_Pics/1237768.jpg"),
     (0, 0),
@@ -255,7 +255,7 @@ Peter_end = GameEnd(
 
 Vivian_end = GameEnd(
     "Vivian is not the culprit",
-    ["Restart", "Quit"],
+    ["Restart", "  Quit  "],
     pygame.image.load(
         "Game_Pics/1237768.jpg"),
     (0, 0),
@@ -265,7 +265,7 @@ Vivian_end = GameEnd(
 
 Ryan_end = GameEnd(
     "Ryan is not the culprit",
-    ["Restart", "Quit"],
+    ["Restart", "  Quit  "],
     pygame.image.load(
         "Game_Pics/1237768.jpg"),
     (0, 0),
