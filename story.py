@@ -211,7 +211,7 @@ Sam_end = GameEnd(
         "Game_Pics/1237768.jpg"),
     (0, 0),
     [None, None],
-    pygame.mixer.Sound("music\Mission Failed Sound Effect (mp3cut.net).mp3"))
+    pygame.mixer.Sound("music/Mission Failed Sound Effect (mp3cut.net).mp3"))
 
 Luke_end = GameEnd(
     "Luke is not the culprit",
@@ -220,7 +220,7 @@ Luke_end = GameEnd(
         "Game_Pics/1237768.jpg"),
     (0, 0),
     [None, None],
-    pygame.mixer.Sound("music\Mission Failed Sound Effect (mp3cut.net).mp3"))
+    pygame.mixer.Sound("music/Mission Failed Sound Effect (mp3cut.net).mp3"))
 
 Wolf_end = GameEnd(
     "Wolf is not the culprit",
@@ -229,7 +229,7 @@ Wolf_end = GameEnd(
         "Game_Pics/1237768.jpg"),
     (0, 0),
     [None, None],
-    pygame.mixer.Sound("music\Mission Failed Sound Effect (mp3cut.net).mp3")
+    pygame.mixer.Sound("music/Mission Failed Sound Effect (mp3cut.net).mp3")
 )
 
 Peter_end = GameEnd(
@@ -251,7 +251,7 @@ Peter_end = GameEnd(
         "Game_Pics/1237768.jpg"),
     (0, 0),
     [None, None],
-    pygame.mixer.Sound("music\Assassin's Creed Flag Sound Effect 1 of 2.mp3"))
+    pygame.mixer.Sound("music/Assassin's Creed Flag Sound Effect 1 of 2.mp3"))
 
 Vivian_end = GameEnd(
     "Vivian is not the culprit",
@@ -260,7 +260,7 @@ Vivian_end = GameEnd(
         "Game_Pics/1237768.jpg"),
     (0, 0),
     [None, None],
-    pygame.mixer.Sound("music\Mission Failed Sound Effect (mp3cut.net).mp3")
+    pygame.mixer.Sound("music/Mission Failed Sound Effect (mp3cut.net).mp3")
 )
 
 Ryan_end = GameEnd(
@@ -270,7 +270,7 @@ Ryan_end = GameEnd(
         "Game_Pics/1237768.jpg"),
     (0, 0),
     [None, None],
-    pygame.mixer.Sound("music\Mission Failed Sound Effect (mp3cut.net).mp3")
+    pygame.mixer.Sound("music/Mission Failed Sound Effect (mp3cut.net).mp3")
 )
 scene_accuse = Accuse(["Ryan", "Vivian", "Peter", "Mr.wolf", "Luke",
                        "is it Sam", "Return"],
@@ -322,7 +322,7 @@ roof_scene3 = Scene("The gustling air blows onto your face as you climb up the r
                         "Go back": None
                     },
                     pygame.image.load(
-                        "Game_Pics\olivier-carignan-victoriastation-extfront.jpg"),
+                        "Game_Pics/olivier-carignan-victoriastation-extfront.jpg"),
                     (-300, 20),
                     [None])
 # sleeper_2
@@ -424,7 +424,7 @@ roof_scene2 = Scene("There's nothing here on the roof",
                         "Go back": None
                     },
                     pygame.image.load(
-                        "Game_Pics\olivier-carignan-victoriastation-extfront.jpg"),
+                        "Game_Pics/olivier-carignan-victoriastation-extfront.jpg"),
                     (-300, 20),
                     [None])
 # sleeper_1
@@ -512,7 +512,7 @@ roof_scene = Scene("The detective then climbs on the roof of the moving train an
                        "Go back": None
                    },
                    pygame.image.load(
-                       "Game_Pics\olivier-carignan-victoriastation-extfront.jpg"),
+                       "Game_Pics/olivier-carignan-victoriastation-extfront.jpg"),
                    (-300, 20),
                    [None])
 
@@ -687,7 +687,7 @@ train_stop = Scene("You immediately pull the emergency lever and stop the train 
                        "wrong_scene1": None,
                        "next_scene": train_scene
                    },
-                   pygame.image.load(r"Game_Pics\Train_station.png"),
+                   pygame.image.load(r"Game_Pics/Train_station.png"),
                    (0, 30),
                    [None,
                     "Trainmaster: The midnight train, It's Train 616. You better hurry. It's leaving right now",
@@ -716,7 +716,7 @@ wrong_scene1 = Scene("You enter the train. But wait, the train's powerful locomo
                      {
                          "end_game1": end_game1
                      },
-                     pygame.image.load(r"Game_Pics\bruno-morin-blacktrain.jpg"),
+                     pygame.image.load(r"Game_Pics/bruno-morin-blacktrain.jpg"),
                      (0, 0),
                      ["Amidst the coal train, alongside the towering mounds of coal, the wagons bore witness to a "
                       "myriad of other products and materials. Maybe this is a cargo and good train.",
@@ -738,7 +738,7 @@ wrong_scene2 = Scene("Stepping onto the passenger train, you find yourself engul
                          "next station": end_game1,
                          "Stop train": train_stop
                      },
-                     pygame.image.load(r"Game_Pics\bruno-morin-blacktrain.jpg"),
+                     pygame.image.load(r"Game_Pics/bruno-morin-blacktrain.jpg"),
                      (0, 0),
                      ["The train inspector informs you that this is train 616 and nothing such as murders happen on "
                       "this train. Since it is a passenger train, it is always crowded with people.", None, None])
@@ -759,7 +759,7 @@ initial_scene3 = Scene("With the pocket watch securely in his possession, You kn
                            "wrong_scene2": wrong_scene2,
                            "next_scene": train_scene
                        },
-                       pygame.image.load(r"Game_Pics\Train_station.png"),
+                       pygame.image.load(r"Game_Pics/Train_station.png"),
                        (0, 0),
                        [None, None,
                         "Trainmaster: The midnight train, It's Train 616. You better hurry. It's leaving right now",
@@ -777,7 +777,7 @@ initial_scene = Scene("At the scene, you find a man standing at a tree nearby th
                           "next_scene": None,
                       },
                       pygame.image.load(
-                          r"Game_Pics\murder.jpg"),
+                          r"Game_Pics/murder.jpg"),
                       (-430, 0),
                       ["A lifeless Male body dressed in the attire of a "
                        "wealthy businessman, lay motionless. He is wearing only one shoe. The man has sustained "
@@ -806,7 +806,7 @@ initial_scene2 = Scene("You approached the tramp cautiously, your instinct guidi
                            "Go back": initial_scene
                        },
                        pygame.image.load(
-                           r"Game_Pics\assassins_creed_syndicate_london_art-2.png"),
+                           r"Game_Pics/assassins_creed_syndicate_london_art-2.png"),
                        (0, 0),
                        ["Vagrant: I heard a splash an' right quick pulled this bloke out a' the shallows. Dead as a "
                         "mackerel.",
