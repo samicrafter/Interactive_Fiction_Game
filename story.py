@@ -704,7 +704,7 @@ end_game1 = GameEnd("After a few hours of travel, the train eventually arrived a
                         "Game_Pics/1237768.jpg"),
                     (0, 0),
                     [None, None],
-                    pygame.mixer.Sound("music\Mission Failed Sound Effect (mp3cut.net).mp3")
+                    pygame.mixer.Sound("music/Mission Failed Sound Effect (mp3cut.net).mp3")
                     )
 
 wrong_scene1 = Scene("You enter the train. But wait, the train's powerful locomotives pulled a long line of wagons, "
