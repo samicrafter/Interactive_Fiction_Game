@@ -128,7 +128,7 @@ prologue1 = Prologue("London, 1868, A city cloaked in a fog of coal smoke and se
                      " chap working at the road. The chap screams:                                       "
                      "                                Hey! Someone help! Some tramp found something down there!",
                      pygame.image.load(
-                         r"C:Game_Pics/600965.jpg"),
+                         r"Game_Pics/600965.jpg"),
                      "press 'Enter' to continue.")
 prologue2 = Prologue("Looks like foul play! You rush to the scene. In the dimly lit streets of the city, "
                     "shadows danced along the crumbling "
